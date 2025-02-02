@@ -1,0 +1,149 @@
+body {
+    font-family: 'Itim', sans-serif;
+    background: linear-gradient(to right, #FFECB3, #F8BBD0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo img {
+    width: 300px; /* ขนาดโลโก้ที่ใหญ่ขึ้น */
+    height: auto; /* ให้สูงอัตโนมัติ เพื่อรักษาสัดส่วน */
+    margin-bottom: 20px; /* ให้โลโก้อยู่ห่างจากข้อความเล็กน้อย */
+    max-width: 90%; /* จำกัดขนาดของโลโก้ให้เหมาะสมกับหน้าจอ */
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.book-image-container {
+    width: 100%; /* กำหนดความกว้างเต็ม */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* เว้นระยะจากด้านล่าง */
+}
+
+#book-image {
+    max-width: 150px; /* กำหนดขนาดสูงสุดให้รูปภาพ */
+    height: auto; /* ให้สูงอัตโนมัติ */
+    border-radius: 10px; /* มุมโค้ง */
+    border: 2px solid #ddd; /* ขอบกรอบ */
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background: #FCE4EC;
+    outline: none;
+}
+
+.submit-btn {
+    background: linear-gradient(to right, #FFD54F, #FFB74D);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    opacity: 0.8;
+}
+
+.personal-info-form {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.report {
+    font-size: 16px;
+}
+
+#report-details {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.report {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: left;
+}
+
+.report h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #FF4081;
+    margin-bottom: 15px;
+}
+
+#report-details {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.report img {
+    width: 100px; /* กำหนดขนาดรูปภาพ */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.submit-btn {
+    background: linear-gradient(to right, #FFD54F, #FFB74D);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    opacity: 0.8;
+}

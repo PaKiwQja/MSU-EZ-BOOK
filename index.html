@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSU Ez Book</title>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- โลโก้ -->
+        <div class="logo">
+            <img src="MSU EZ BOOK.png" alt="MSU Logo" />
+        </div>
+        <h1>MSU Ez Book</h1>
+        
+        <div class="card">
+            <div class="book-image-container">
+                <img id="book-image" src="" alt="Book Image" style="display: none;">
+            </div>
+            
+            <div class="form-group">
+                <label>ประเภทหนังสือ</label>
+                <select id="category">
+                    <option value="">-- เลือกประเภท --</option>
+                    <option value="นิยาย">นิยาย</option>
+                    <option value="สารคดี">สารคดี</option>
+                    <option value="การ์ตูน">การ์ตูน</option>
+                    <option value="วิทยาศาสตร์">วิทยาศาสตร์</option>
+                </select>
+                <br><br>
+                <label for="book">เลือกชื่อหนังสือ</label>
+                <select id="book">
+                    <option value="">-- เลือกหนังสือ --</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>วันที่ยืม</label>
+                <input type="date" id="borrow-date">
+            </div>
+            <div class="form-group">
+                <label>วันที่คืน</label>
+                <input type="date" id="return-date">
+            </div>
+            <button class="submit-btn">ถัดไป</button>
+        </div>
+
+        <!-- ฟอร์มใหม่สำหรับกรอกข้อมูลส่วนตัว -->
+        <div class="personal-info-form" style="display: none;">
+            <div class="form-group">
+                <label for="name">ชื่อ-สกุล</label>
+                <input type="text" id="name" placeholder="กรุณากรอกชื่อ" required>
+            </div>
+            <div class="form-group">
+                <label for="student-id">รหัสนักศึกษา</label>
+                <input type="text" id="student-id" placeholder="กรุณากรอกรหัสนักศึกษา" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">เบอร์โทร</label>
+                <input type="tel" id="phone" placeholder="กรุณากรอกเบอร์โทร" required>
+            </div>
+            <div class="form-group">
+                <label for="email">อีเมล</label>
+                <input type="email" id="email" placeholder="กรุณากรอกอีเมล" required>
+            </div>
+            <button class="submit-btn" id="submit-info">ยืนยัน</button>
+        </div>
+
+        <div class="report" style="display: none;">
+            <h2>รายงานการยืมคืน</h2>
+            <div id="report-details">
+                <!-- ข้อมูลรายงานจะถูกแสดงที่นี่ -->
+            </div>
+            <button class="submit-btn" id="back-btn">กลับไปหน้าแรก</button>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
